@@ -11,7 +11,7 @@ font-weight: bold;}
 text-decoration: none; -webkit-text-stroke:#75c2af 2px}
 .menu .space-up{margin-top:40%}
 .menu .menu-item img{display:block; margin:auto}
-#menu-ini{background-color: #75c2af; padding:3%}
+#menu-ini{padding:3%}
 /* the current section will be indicated by the menu*/
 .menu-item.current{border-right: 2px solid #fff; padding-left:2%}
 
@@ -20,12 +20,15 @@ margin-left:10%; background-position:top; background-position-y:bottom}
 #main-tab *{color:#444;}
 
 #intro{padding:2%; min-height:100vh}
+#intro .greeting{border-bottom: 2px solid #75c2af; -webkit-text-fill-color: #fff;
+-webkit-text-stroke: #000 1px; font-weight: bold;}
 #intro *{text-align: center;}
 #intro .icon{width:8%}
 #intro .name{font-size: 30px; padding:5%;}
 #intro .name .n{color:#75c2af}
 #intro .occupation{font-size:25px;}
-#intro .occupation div{color:#75c2af;}
+#intro .occupation div{-webkit-text-fill-color: #75c2af; -webkit-text-stroke: #000 1px;
+font-weight: bold;}
 #intro .contact-me *{font-size:18px;}
 
 .content{width:50%; margin:auto}
@@ -74,9 +77,6 @@ body.ss #menu-ini{display:flex}
 body.ss .menu{width:100%; max-width:200px;}
 body.ss .hide{display:none}
 body.ss .menu .space-up{margin-top:20%}
-body.ss .toggle-container input[type=checkbox]:checked + span.round{
-    background-color:#f00;
-}
 body.ss .content{width:100%; padding:5%}
 body.ss #skills-list .skill{width:45%}
 body.ss #project-list .project{width:45%}
