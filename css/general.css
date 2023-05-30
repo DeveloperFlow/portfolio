@@ -1,35 +1,35 @@
-body{margin:0; padding:0; background-color: #e8e8ff;}
+body{margin:0; padding:0; background-color: #e8e8ff; background-image: url("../img/bg.png");
+background-position:top; background-size:contain;}
 button{background-color: transparent; border:1px solid #f00; outline:none; color:#f00 !important;
 font-weight: bold;}
 
 /*more general styles*/
 .text-icon{font-size:40px; display:none}
+img{border:none}
 
 /*menu*/
 .menu{background-color: #e8e8ff; padding:1%; width:10%; max-width: 120px; z-index:3;}
-.menu *{text-align: center; width:100%; color:#555; display: block;
-text-decoration: none; -webkit-text-stroke:#75c2af 2px}
+.menu *{text-align: center; width:100%; color:#000; display: block;
+text-decoration: none; -webkit-text-stroke:#000 0.5px; -webkit-text-fill-color: #75c2af;}
 .menu .space-up{margin-top:40%}
 .menu .menu-item img{display:block; margin:auto}
 #menu-ini{padding:3%}
 /* the current section will be indicated by the menu*/
-.menu-item.current{border-right: 2px solid #fff; padding-left:2%}
+.menu-item.current{border-right: 2px solid #75c2af; padding-left:2%}
 
 #main-tab{width:90%; background-image:url("../img/p.png"); background-size: contain;
-margin-left:10%; background-position:top; background-position-y:bottom}
+margin-left:10%; background-position:top; background-position-y:bottom; height:auto}
 #main-tab *{color:#444;}
 
 #intro{padding:2%; min-height:100vh}
-#intro .greeting{border-bottom: 2px solid #75c2af; -webkit-text-fill-color: #fff;
--webkit-text-stroke: #000 1px; font-weight: bold;}
-#intro *{text-align: center;}
-#intro .icon{width:8%}
-#intro .name{font-size: 30px; padding:5%;}
-#intro .name .n{color:#75c2af}
+#intro .greeting{border-bottom: 2px solid #75c2af;}
+#intro *{text-align: center; -webkit-text-fill-color: #e8e8ff; -webkit-text-stroke-width: 1px;
+font-weight: bold; line-height: 150%; transition: .5s;}
+#intro .icon{width:8%; width:10vw}
+#intro .name{font-size: 35px; padding:5%;}
 #intro .occupation{font-size:25px;}
-#intro .occupation div{-webkit-text-fill-color: #75c2af; -webkit-text-stroke: #000 1px;
-font-weight: bold;}
-#intro .contact-me *{font-size:18px;}
+#intro .contact-me *{font-size:18px; -webkit-text-fill-color: initial; -webkit-text-stroke: 0px;
+font-weight: normal;}
 
 .content{width:50%; margin:auto}
 #skills{padding: 3%;}
@@ -85,12 +85,19 @@ body.ss #project-list .project{width:45%}
 #dark-theme *{color:#fff}
 #dark-theme body{background-color: #000;}
 #dark-theme .menu{background-color:#000; border:none; background-image: none;}
-#dark-theme .menu-item.current{border-right:2px solid #75c2af}
 #dark-theme #skills-list .skill{box-shadow:inset 2px 10px 10px #555;}
 #dark-theme #project-list .project{box-shadow:inset 2px 10px 10px #888}
 #dark-theme .minitab{background-color: #000;}
+#dark-theme #main-wrapper{background-color: rgba(0,0,0,0.7);}
+#dark-theme #intro *{-webkit-text-fill-color: #444; -webkit-text-stroke: #c8c8ff 1px;}
+#dark-theme #intro .contact-me *{font-weight:normal; -webkit-text-fill-color: initial;
+-webkit-text-stroke: 0px;}
 
-
+/*scroll bars*/
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-track{background-color: transparent}
+::-webkit-scrollbar-thumb{background-color: #75c2af; width:20px;}
+*{scrollbar-color:#75c2af transparent; scrollbar-width:thin}
 @keyframes from-left{
     0%{translate:-200px}
     100%{translate:0px}
