@@ -49,7 +49,7 @@ window.onload = function(){
 }
 function loadIntro(){
     var intro = IntroPage.children[0]; remove(intro)
-    write(intro,IntroPage)
+    write(intro,IntroPage,null,35)
 }
 function adjust(){
     //adjusts the contents on the page
