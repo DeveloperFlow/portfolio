@@ -45,7 +45,7 @@ var Projects = [
         endDate:null,
         skills:["Front-End Development"],
         name:"Qr code generator"
-    }
+    },
     {
         images:["palanding.PNG","paforums.PNG","poultrydashboard.png","poultry-search.png"],
         link:"https:\/\/poultryaid.000.pe\/land.php\/",
