@@ -38,12 +38,22 @@ var Projects = [
     },
     {
         images:["generated-a-code.PNG","home.PNG"],
-        link:"https:\/\/myownpace.github.io\/qrcode\/",
+        link:"https:\/\/developerflow.github.io\/yoqr\/",
         description:"An application for generating qr codes, its use cases are numerous, from \
         generating qr codes for phone numbers or wifi connections\r\nto qr codes for brand websites",
         startDate:null,
         endDate:null,
         skills:["Front-End Development"],
         name:"Qr code generator"
+    }
+    {
+        images:["palanding.PNG","paforums.PNG","poultrydashboard.png","poultry-search.png"],
+        link:"https:\/\/poultryaid.000.pe\/land.php\/",
+        description:"Poultryaid provides a digital solution for poultry farmers to be able to manage their farm stats and keep track of resource use\
+            it also hosts an ecosystem of poultry stakeholders thereby enabling poultry farmers to find everyone they need for their farms online.",
+        startDate:null,
+        endDate:null,
+        skills:["Front-End Development","Back-end Development","PHP","Mysql","Api Integration"],
+        name:"PoultryAid"
     }
 ]
